@@ -39,7 +39,9 @@ if __name__ == "__main__":
 
 尝试用 sqlmap 注入结果注不出来。。。有师傅会的能提点一下吗
 
-最后用 mysql 的字符编码问题,绕过对 admin 的判断,参考[Mysql字符编码利用技巧](https://www.leavesongs.com/PENETRATION/mysql-charset-trick.html)
+最后用 mysql 的字符编码问题,绕过对 admin 的判断
+
+参考[Mysql字符编码利用技巧](https://www.leavesongs.com/PENETRATION/mysql-charset-trick.html)
 
 post
 ```

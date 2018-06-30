@@ -2,6 +2,11 @@
 
 由于本人并未向出题人申请重新对题目进行发布的权利，但对每个 Web 题均标明了出处，并将所有用到题目的 repo 连接全部放在了下面，如有涉嫌侵权，实在是抱歉，还请麻烦告知，我会立即撤掉题目。
 
+# 分类
+
+## SQLi
+[web100-6](https://github.com/inory009/CTF-Web-Challenges/tree/master/SQLi/web100-6)
+
 # 来源
 [l3m0n/My_CTF_Challenges](https://github.com/l3m0n/My_CTF_Challenges.git)
 
