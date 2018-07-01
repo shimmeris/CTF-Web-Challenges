@@ -1,16 +1,26 @@
 本项目只是对历届 CTF 开源的 Web 题源码进行了一个整理分类。
 
+# 申明
 由于本人并未向出题人申请重新对题目进行发布的权利，但对每个 Web 题均标明了出处，并将所有用到题目的 repo 连接全部放在了下面，如有涉嫌侵权，实在是抱歉，还请麻烦告知，我会立即撤掉题目。
+
+由于部分题目源码没有 flag ，该部分题目中的 flag 为我自己随便添加的
+
+对提供 dockerfile 的题目不做任何修改，对于部分没有 dockerfile 的题目，会自己编写提供一个相应的 dockerfile
+
+项目中的 wp 有的是在原有的 wp 基础上修改，有的为全部重新写的
 
 # 分类
 
 ## SQLi
 [web100-6](https://github.com/inory009/CTF-Web-Challenges/tree/master/SQLi/web100-6)
 
+## RCE
+[web200-2](https://github.com/inory009/CTF-Web-Challenges/tree/master/RCE/web200-2)
+
 # 来源
 [l3m0n/My_CTF_Challenges](https://github.com/l3m0n/My_CTF_Challenges.git)
 
-[orangetw/My-CTF-Web-Challenges](https://github.com/orangetw/My-CTF-Web-Challenges)`
+[orangetw/My-CTF-Web-Challenges](https://github.com/orangetw/My-CTF-Web-Challenges)
 
 [l4wio/CTF-challenges-by-me](https://github.com/l4wio/CTF-challenges-by-me)
 
