@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}URL Storage - Signup/Login{% endblock %}
+
+{% block content %}
+{% if form.errors %}
+    {% for field in form %}
+        {% for error in field.errors %}
+            <div class="container alert alert-danger">
+                <strong>{{ field.name }}: {{ error|escape }}</strong>
+            </div>
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+        <fieldset>
+            <form method="POST">
+                <label for="name">What's your name?  </label>
+                <input type="text" value="" name="username" id="name" class="validate">
+                <label for="pw">And your password: </label>
+                <input type="text" value="" name="password" id="pw" class="validate">
+                {% csrf_token %}
+                <input type="submit" class="button" value="Login / Register">
+            </form>
+        </fieldset>
+{% endblock %}

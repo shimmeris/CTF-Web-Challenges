@@ -1,0 +1,16 @@
+- model: auth.user
+  pk: 1
+  fields:
+    username: admin
+    password: pbkdf2_sha256$36000$aEYFykhWmEVl$luoEd85o7hvdnHyUg6mZEtCw81ibXVJuwmIOyZCh7bo=  
+    is_superuser: true
+    is_staff: true
+    is_active: true
+
+- model: urlstorage.UserProfile
+  pk: 1
+  fields:
+    user: 1
+    token: da3eb263841b743fa7e11c63e67650a8
+    created_at: 2017-12-17T14:15:30.381Z
+

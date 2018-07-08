@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}URL Storage{% endblock %}
+
+{% block content %}
+    <h3>Store your URL for free</h3>
+    <label for="name">Your name:</label>
+    <input type="text" value="{{ user.get_username }}" name="name" id="name" readonly />
+    <form method="POST">
+    <label for="url">Your URL:</label>
+    <input type="text" value="{{ user.profile.url }}" name="url" id="url" />
+    <input type="submit" value="Save changes" class="button">
+    <a href="flag?token={{ user.profile.token }}" class="button">Get Flag</a>
+    <a href="logout" class="button">Logout</a>
+    </form>
+{% endblock %}

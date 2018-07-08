@@ -1,0 +1,22 @@
+<html lang="en">
+    <head>
+        <meta name="description" content="pwn it bro" />
+
+        <title>{% block title %}{% endblock %}</title>
+
+        <link href="static/css/milligram.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        {% if messages %}
+        <center>
+            {% for message in messages %}
+            <b>{{message.tags}}</b> {{ message }}
+            {% endfor %}
+        </center>
+        <hr>
+        {% endif %}
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
+

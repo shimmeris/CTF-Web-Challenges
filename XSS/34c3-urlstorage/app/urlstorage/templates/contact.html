@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}URL Storage - Contact admin{% endblock %}
+
+{% block content %}
+        <p><b>Customer satisfaction is one of the admin's top priorities!</b></p>
+        <hr>
+        <fieldset>
+            <form method="POST">
+                <label for="desc">Describe the problem you are encountering:</label>
+                <textarea id="desc" name="desc"></textarea>
+                <label for="url">Provide an URL where you encountered this problem:</label>
+                <input type="text" id="url" name="url">
+                {% csrf_token %}
+                {{ captcha.as_p }}
+                <p>The admin's time is very limited, so he can only spare <b>3 seconds</b> per report.</p> 
+                <hr>
+                (Optional: if you want the admin to look for a longer period at your report, solve this proof of work please!)
+                <label for"pow">Solution for proof of work challenge: {{ pow }} <small>(solve with <a href='https://34c3ctf.ccc.ac/uploads/pow.py' target='_blank'>./pow.py</a> {{ pow }})</small> </label>
+                <input type="text" id="pow" name="pow">
+                <input type="submit" class="button" value="Submit">
+                <a href="urlstorage" class="button">Back</a>
+            </form>
+        </fieldset>
+
+{% endblock %}
+
+
