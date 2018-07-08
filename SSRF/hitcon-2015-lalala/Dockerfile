@@ -14,10 +14,9 @@ RUN apt-get install -y nginx php7.0-fpm
 RUN rm -rf /var/lib/apt/lists/*
  
 COPY ./default /etc/nginx/sites-available/default
-COPY ./src/index.php /usr/share/nginx/html/index.php
-COPY ./flag.txt  /usr/share/nginx/flag
+COPY ./src/lalala.php /usr/share/nginx/html/lalala.php
+COPY ./flag.txt  /usr/share/nginx/html/flag
 
-RUN  ln -s /bin/true /bin/orange
 RUN chown -R www-data:www-data /usr/share/nginx/html \
     && ln -s /usr/share/nginx/html /html
 COPY ./start.sh /start.sh
