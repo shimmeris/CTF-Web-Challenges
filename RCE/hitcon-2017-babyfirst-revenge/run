@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run -d -p 8008:80 ctf/babyfirst_revenge
