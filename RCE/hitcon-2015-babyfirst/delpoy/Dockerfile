@@ -7,7 +7,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 # Update sources
 RUN apt-get update -y
 
-RUN apt-get install -y  bash-completion unzip build-essential gcc g++ autoconf libiconv-hook-dev 
+RUN apt-get install -y  bash-completion unzip build-essential gcc g++ autoconf libiconv-hook-dev wget
 
 # nginx php
 RUN apt-get install -y nginx php7.0-fpm  
@@ -15,7 +15,7 @@ RUN rm -rf /var/lib/apt/lists/*
  
 COPY ./default /etc/nginx/sites-available/default
 COPY ./src/index.php /usr/share/nginx/html/index.php
-COPY ./flag.txt  /usr/share/nginx/flag
+COPY ./src/flag.txt  /usr/share/nginx/flag
 
 RUN  ln -s /bin/true /bin/orange
 RUN chown -R www-data:www-data /usr/share/nginx/html \

@@ -5,11 +5,20 @@
 
 由于部分题目源码没有 flag ，该部分题目中的 flag 为我自己随便添加的
 
-对提供 dockerfile 的题目不做任何修改，对于部分没有 dockerfile 的题目，会自己编写提供一个相应的 dockerfile
+对提供 Dockerfile 的题目会做适当修改，对于大部分没有 dockerfile 的题目，会自己~~编写~~ (复制粘贴)提供一个相应的 Dockerfile
 
-项目中的 wp 有的是在原有的 wp 基础上修改，有的为全部重新写的
+# 搭建
+每道题目对应的端口需要自行在 build 脚本中更改，默认为 8000-8100
+```shell
+cd the_challenge
+chmod 777 build run
+./build
+./run
+```
 
 # 分类
+
+
 
 ## SQLi
 [web100-6](https://github.com/inory009/CTF-Web-Challenges/tree/master/SQLi/web100-6)
@@ -25,8 +34,13 @@
 ## XSS
 [34c4-urlstorage](https://github.com/inory009/CTF-Web-Challenges/tree/master/XSS/34c3-urlstorage)
 
+[rctf-2018-amp](https://github.com/inory009/CTF-Web-Challenges/tree/master/XSS/rctf-2018-amp)
+
 # 反序列化
 [hitcon-2016-babytrick](https://github.com/inory009/CTF-Web-Challenges/tree/master/反序列化/hitcon-2016-babytrick)
+
+# 综合
+[n1ctf-2018-easy_harder_php](https://github.com/inory009/CTF-Web-Challenges/tree/master/反序列化/n1ctf-2018-easy_harder_php)
 
 
 # 来源

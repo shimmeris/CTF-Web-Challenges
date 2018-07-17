@@ -31,8 +31,8 @@ class HITCON{
         global $FLAG;
 
         list($username, $password) = func_get_args();
-        $username = strtolower(trim(mysql_escape_string($username)));
-        $password = strtolower(trim(mysql_escape_string($password)));
+        $username = strtolower(trim(mysqli_escape_string($username)));
+        $password = strtolower(trim(mysqli_escape_string($password)));
 
         $sql = sprintf("SELECT * FROM users WHERE username='%s' AND password='%s'", $username, $password);
 
@@ -71,12 +71,12 @@ class HITCON{
             $this->__query($sql, $back=false);
         } 
 
-        mysqli_query("SET names utf8");
-        mysqli_query("SET sql_mode = 'strict_all_tables'");
+        mysqli_query($this->conn, "SET names utf8");
+        mysqli_query($this->conn, "SET sql_mode = 'strict_all_tables'");
     }
 
     function __query($sql, $back=true) {
-        $result = @mysqli_query($sql);
+        $result = @mysqli_query($this->conn, $sql);
         if ($back) {
             return @mysqli_fetch_object($result);
         }
@@ -107,7 +107,7 @@ class HITCON{
 
     function __wakeup() {
         foreach($this->args as $k => $v) {
-            $this->args[$k] = strtolower(trim(mysql_escape_string($v)));
+            $this->args[$k] = strtolower(trim(mysqli_escape_string($v)));
         }
     }
 }
