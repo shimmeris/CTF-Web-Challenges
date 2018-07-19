@@ -1,11 +1,11 @@
-本项目只是对历届 CTF 开源的 Web 题源码进行了一个整理分类，并提供一个简单的搭建方法（毕竟目前公开的题目提供 Dockerfile 的是少数。。）
+本项目只是对历届 CTF 开源的 Web 题源码进行了一个整理分类，并提供一个简单的搭建方法（毕竟目前公开的题目提供 Dockerfile 及 sql 文件的是少数。。）
 
 # 申明
-由于本人并未向出题人申请重新对题目进行发布的权利，但对每个 Web 题均标明了出处，并将所有用到题目的 repo 连接全部放在了下面，如有涉嫌侵权，实在是抱歉，还请麻烦告知，我会立即撤掉题目。
+由于本人并未向出题人申请重新对题目进行修改发布的权利，但对每个 Web 题均标明了出处，并将所有用到题目的 repo 连接全部放在了下面，如有涉嫌侵权，实在是抱歉，还请麻烦告知，我会立即撤掉题目。
 
 因为部分题目源码没有 flag ，因此这些题目中的 flag 为我自己随便添加的
 
-对提供 Dockerfile 的题目会做适当修改，对于大部分没有 dockerfile 的题目，会自己~~编写~~ (复制粘贴)提供一个相应的 Dockerfile
+对提供 Dockerfile及 SQL文件 的题目会做适当修改，对于大部分没有的题目，会自己~~编写~~ (复制粘贴)提供相应的文件
 
 # 搭建
 每道题目对应的端口需要自行在 build 脚本中更改，默认为 8000-8100
@@ -40,6 +40,10 @@ chmod 777 build run
 
 ## 反序列化
 [hitcon-2016-babytrick](https://github.com/inory009/CTF-Web-Challenges/tree/master/反序列化/hitcon-2016-babytrick)
+
+
+## 文件包含
+[LCTF-2017-萌萌哒的报名系统](https://github.com/inory009/CTF-Web-Challenges/tree/master/文件包含/LCTF-2017-萌萌哒的报名系统)
 
 ## 综合
 [n1ctf-2018-easy_harder_php](https://github.com/inory009/CTF-Web-Challenges/tree/master/反序列化/n1ctf-2018-easy_harder_php)

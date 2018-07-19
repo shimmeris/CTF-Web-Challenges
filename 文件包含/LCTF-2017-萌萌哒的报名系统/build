@@ -1,0 +1,2 @@
+#!/bin/bash
+docker build -t="ctf/sign_up_system" ./deploy
