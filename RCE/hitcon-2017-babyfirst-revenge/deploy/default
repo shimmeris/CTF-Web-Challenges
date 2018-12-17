@@ -1,8 +1,6 @@
 server {
-
-
     listen 80; 
-    root /usr/share/nginx/html;
+    root /var/www/html;
     index index.php index.html index.htm; 
     
     server_name localhost; 

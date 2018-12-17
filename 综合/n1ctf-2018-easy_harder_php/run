@@ -1,2 +1,0 @@
-# /bin/bash
-docker run -d -p 8006:80 ctf/web100

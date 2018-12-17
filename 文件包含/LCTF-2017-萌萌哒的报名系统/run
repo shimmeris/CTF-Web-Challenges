@@ -1,2 +1,0 @@
-#!/bin/bash
-docker run -d -p 8010:80 ctf/sign_up_system

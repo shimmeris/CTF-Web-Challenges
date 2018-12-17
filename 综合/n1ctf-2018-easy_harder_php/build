@@ -1,2 +1,0 @@
-#!/bin/bash
-docker build -t='ctf/easy_harder_php' ./deploy
