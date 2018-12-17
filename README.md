@@ -5,7 +5,7 @@
 
 因为部分题目源码没有 flag ，因此这些题目中的 flag 为我自己随便添加的
 
-对已提供 Dockerfile 及 sql 文件 的题目会做适当修改，对于大部分没有的题目，会自己~~编写~~ (复制粘贴)提供相应的文件
+对已提供 Dockerfile 及 sql 文件 的题目会做适当修改（同样会标注出 docker 环境来源），对于大部分没有的题目，会自己~~编写~~ (复制粘贴)提供相应的文件
 
 # 搭建
 每道题目对应的端口需要自行在 build 脚本中更改
@@ -26,20 +26,21 @@ chmod 777 build run
 
 [hitcon-2017-babyfirst-revenge](https://github.com/inory009/CTF-Web-Challenges/tree/master/RCE/hitcon-2017-babyfirst-revenge)
 
-[hitcon-2017-babyfirst](https://github.com/inory009/CTF-Web-Challenges/tree/master/RCE/hitcon-2017-babyfirstv2-revenge-)
+[hitcon-2017-babyfirst-revenge-v2](https://github.com/inory009/CTF-Web-Challenges/tree/master/RCE/hitcon-2017-babyfirstv2-revenge-v2)
 
 ## XSS
 
 ## SSRF
 
 ## Unserilization
+[hitcon-2016-babytrick](https://github.com/inory009/CTF-Web-Challenges/tree/master/unserilization/hitcon-2016-babytrick)
 
 ## File Inclution
 
 ## XXE
 
 # 来源
-[l3m0n/My_CTF_Challenges](https://github.com/l3m0n/My_CTF_Challenges.git)
+[l3m0n/My_CTF_Challenges](https://github.com/l3m0n/My_CTF_Challenges)
 
 [wonderkun/CTF_web](https://github.com/wonderkun/CTF_web)
 
@@ -53,7 +54,7 @@ chmod 777 build run
 
 [munsiwoo/ctf-web-prob](https://github.com/munsiwoo/ctf-web-prob)
 
-[hongriSec/CTF-Training]https://github.com/hongriSec/CTF-Training
+[hongriSec/CTF-Training](https://github.com/hongriSec/CTF-Training)
 
 [eboda/34c3ctf](https://github.com/eboda/34c3ctf)
 
