@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run -d -p 8005:80 ctf/babyphp-revenge
