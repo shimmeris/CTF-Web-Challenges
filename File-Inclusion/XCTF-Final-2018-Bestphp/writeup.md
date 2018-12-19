@@ -48,3 +48,6 @@ http --form post "http://127.0.0.1:8003/?function=session_start&save_path=."  na
 访问 `http://127.0.0.1:8003/?function=extract&file=sess_ivs6beep0k4oniqru15iap6bb3` 显示了 phpinfo 页面。
 
 再用同样的方式写 shell 即可。
+
+## Reference
+[session_start()&bestphp](https://www.anquanke.com/post/id/164569#h2-5)

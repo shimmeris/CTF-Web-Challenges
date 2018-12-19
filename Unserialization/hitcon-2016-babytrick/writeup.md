@@ -1,5 +1,3 @@
-# 反序列化
-
 # Hitcon-2016-babytrick
 ```php
 <?php
