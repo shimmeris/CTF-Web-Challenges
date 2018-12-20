@@ -80,5 +80,7 @@ for i in payload:
     sleep(0.1)
 ```
 
+![shell](img/shell.png)
+
 ## References
 [HITCON 2017 babyfirst-revenge[-v2]浅析](https://xz.aliyun.com/t/1579)

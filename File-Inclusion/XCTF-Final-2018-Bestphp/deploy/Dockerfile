@@ -24,7 +24,7 @@ RUN rm /var/www/html/*.html
 RUN chmod a+x /start.sh
 
 # 题目环境
-RUN echo 'xctf{Funy_s3ss1On' > /flag
+RUN echo 'xctf{Funy_s3ss1On}' > /flag
 RUN chown -R www-data:www-data /var/www/html \
     && ln -s /var/www/html /html
 
