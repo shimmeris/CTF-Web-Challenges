@@ -1,13 +1,13 @@
 本项目只是对历届 CTF 开源的 Web 题源码进行了一个整理分类，并提供一个简单的搭建方法
 
 # 申明
-由于本人并未向出题人申请重新对题目进行修改发布的权利，但对每个题均标明了出处，并将所有用到题目的 repo 链接全部放在了下面，如涉嫌侵权，立马致歉删除。
+由于本人并未向出题人申请重新对题目进行修改发布的权利，但对每个题均标明了出处，如涉嫌侵权，立马致歉删除。
 
 对于部分没找到 flag 的题目，会自己随便添加
 
 对已提供 Dockerfile 及 sql 文件的题目会做适当修改，对于大部分没有的题目，会自己~~编写~~ (复制粘贴)提供相应的文件
 
-如有 bug，希望告知
+如有 bug，还望告知
 
 # 搭建
 每道题目对应的端口需要自行在 run 脚本中更改
@@ -47,6 +47,8 @@ chmod 777 build run
 ## File Inclusion
 [XCTF-Final-2018-Bestphp](https://github.com/inory009/CTF-Web-Challenges/tree/master/File-Inclusion/XCTF-Final-2018-Bestphp)
 
+[hitcon-2018-one-line-php-challenge](https://github.com/inory009/CTF-Web-Challenges/tree/master/File-Inclusion/hitcon-2018-one-line-php-challenge)
+
 ## XXE
 
 # 来源
@@ -79,6 +81,8 @@ chmod 777 build run
 [vidar-team/HCTF2017](https://github.com/vidar-team/HCTF2017)
 
 [vidar-team/HCTF2016](https://github.com/vidar-team/HCTF2016)
+
+[vidar-team/HCTF2018](https://github.com/vidar-team/HCTF2018)
 
 [LCTF/LCTF2017](https://github.com/LCTF/LCTF2017)
 
