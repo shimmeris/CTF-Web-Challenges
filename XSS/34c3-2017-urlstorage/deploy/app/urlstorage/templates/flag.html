@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}URL Storage - Flag for token {{ user_token|safe }}{% endblock %}
+
+{% block content %}
+    {% if not valid_token %}
+        <p><b>That is not your token!</b></p>
+    {% else %} 
+        <h3><p>Hello {{ user.get_username }},</p></h3>
+        <label for="flag">Here is your flag:</label>
+
+        {% if user.get_username == 'admin' %}
+            <input id="flag" type="text" value="34C3_d163c315ddc5458d329d6f4a617ce6d5358145cb" readonly>
+        {% else %}
+            <input id="flag" type="text" value="{{ user_flag }}" readonly>
+        {% endif %}
+        <label for="status">Your status:</label>
+
+        {% if user.get_username == 'admin' %}
+        <input id="status" type="text" value="admin (you are awesome!)" readonly>
+        {% else  %}
+        <input id="status" type="text" value="non-admin (your flag is pretty much worthless)" readonly>
+        <h6> If you believe we have labeled you incorrectly as a non-admin user, 
+            contact us <a href="contact">here</a>.</h6>
+        <a href="urlstorage" class="button">Back</a>
+        {% endif %}
+    {% endif %}
+
+    
+
+
+{% endblock %}

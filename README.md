@@ -5,12 +5,13 @@
 
 对于部分没找到 flag 的题目，会自己随便添加
 
-对已提供 Dockerfile 及 sql 文件的题目会做适当修改，对于大部分没有的题目，会自己~~编写~~ (复制粘贴)提供相应的文件
+对已提供 Dockerfile 及 sql 文件的题目会做适当修改(或者重写，因为有的题目按给的文件运行不起来。。可能是我打开的方式不对），对于大部分没有的题目，会自己~~编写~~ (复制粘贴)提供相应的文件
 
 如有 bug，还望告知
 
 # 搭建
 每道题目对应的端口需要自行在 run 脚本中更改
+
 ```shell
 cd the_challenge
 chmod 777 build run
@@ -31,6 +32,8 @@ chmod 777 build run
 [hitcon-2017-babyfirst-revenge-v2](https://github.com/inory009/CTF-Web-Challenges/tree/master/RCE/hitcon-2017-babyfirst-revenge-v2)
 
 ## XSS
+[34c3-2017-urlstorage](https://github.com/inory009/CTF-Web-Challenges/tree/master/XSS/34c3-2017-urlstorage)
+
 
 ## SSRF
 [n1ctf-2018-hard-php](https://github.com/inory009/CTF-Web-Challenges/tree/master/SSRF/n1ctf-2018-easy_harder_php)

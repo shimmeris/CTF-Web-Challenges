@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run -d -p 8012:80 ctf/urlstorage
