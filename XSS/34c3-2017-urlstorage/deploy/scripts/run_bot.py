@@ -6,7 +6,7 @@ import requests
 from subprocess import check_output, Popen
 
 
-def login():
+def login1():
     url = 'http://127.0.0.1/'
     user = 'admin'
     pw = 'JJOIUQjouwqhirhq329pP!!!1sdqqweck1'
@@ -46,7 +46,7 @@ while True:
         continue
 
     print('Processing URL {}'.format(url))
-    sessionid = login()
+    sessionid = login1()
     p = Popen(['phantomjs', '/xss/visit.js', url, sessionid, str(duration)], preexec_fn=os.setsid)
     pgid = os.getpgid(p.pid)
 

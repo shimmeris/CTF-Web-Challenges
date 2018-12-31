@@ -7,7 +7,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt-get update -y
 
-# 安装 PHP 及 nginx
+# 安装 PHP 及 apache
 RUN apt-get install -y apache2 \ 
     php7.0 \
     libapache2-mod-php7.0 \
