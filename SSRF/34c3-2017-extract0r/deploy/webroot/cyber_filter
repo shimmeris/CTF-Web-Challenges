@@ -1,0 +1,10 @@
+function verify($directory) {
+    $files = glob($directory . '/*'); 
+    foreach($files as $file) {
+        if (!is_file($file)) {
+            unlink($file);
+            @rmdir($file);
+        }
+    }
+}
+

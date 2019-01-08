@@ -1,0 +1,2 @@
+#!/bin/sh
+docker run -d -p 8013:80 -it ctf/extract0r
